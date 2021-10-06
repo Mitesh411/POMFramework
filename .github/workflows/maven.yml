@@ -13,14 +13,19 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    
+    
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 11
-      uses: actions/setup-java@v2
-      with:
-        java-version: '11'
-        distribution: 'adopt'
-        cache: maven
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+    
+          - uses: actions/checkout@v2
+          - name: Set up JDK 1.8
+            uses: actions/setup-java@v2
+            with:
+              distribution: 'adopt'
+              java-version: '8'
+          - name: Thundra Maven Test Instrumentation
+            uses: thundra-io/thundra-maven-test-action@v1
+            with:
+              apikey: 302ae36c-b2b9-49c6-97e6-fb8498ad516d
+              project_id: 8be831c6-5c65-4cae-85ba-0ca11befd4b8
+              command: mvn clean install
