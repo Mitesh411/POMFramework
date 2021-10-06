@@ -1,29 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="3" ignored="0" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="109670" started-at="2021-10-05T21:16:37 IST" finished-at="2021-10-05T21:18:26 IST">
+  <suite name="Suite" duration-ms="114132" started-at="2021-10-06T21:30:26 IST" finished-at="2021-10-06T21:32:20 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="109670" started-at="2021-10-05T21:16:37 IST" finished-at="2021-10-05T21:18:26 IST">
-      <class name="com.prac.qa.testcase.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prac.qa.testcase.HomePageTest@80503]" name="setUp" is-config="true" duration-ms="23375" started-at="2021-10-05T21:16:37 IST" finished-at="2021-10-05T21:17:00 IST">
+    <test name="Test" duration-ms="114132" started-at="2021-10-06T21:30:26 IST" finished-at="2021-10-06T21:32:20 IST">
+      <class name="com.prac.qa.testcase.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prac.qa.testcase.LoginPageTest@4b553d26]" name="setUp" is-config="true" duration-ms="10761" started-at="2021-10-06T21:30:26 IST" finished-at="2021-10-06T21:30:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validate_page_title()[pri:1, instance:com.prac.qa.testcase.HomePageTest@80503]" name="validate_page_title" duration-ms="14" started-at="2021-10-05T21:17:00 IST" description="Validate the Page Title" finished-at="2021-10-05T21:17:00 IST">
+        <test-method status="FAIL" signature="login_Page_title()[pri:1, instance:com.prac.qa.testcase.LoginPageTest@4b553d26]" name="login_Page_title" duration-ms="43" started-at="2021-10-06T21:30:36 IST" description="Validating Page Title" finished-at="2021-10-06T21:30:36 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<Free CRM - CRM software for customer relationship management, sales, and support.> but was:<Free CRM  - CRM software for customer relationship management, sales, and support.>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<Free CRM - CRM software for customer relationship management, sales, and support.> but was:<Free CRM  - CRM software for customer relationship management, sales, and support.>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at com.prac.qa.testcase.LoginPageTest.login_Page_title(LoginPageTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_page_title -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.prac.qa.testcase.HomePageTest@80503]" name="tearDown" is-config="true" duration-ms="713" started-at="2021-10-05T21:17:00 IST" finished-at="2021-10-05T21:17:01 IST">
+        </test-method> <!-- login_Page_title -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.prac.qa.testcase.LoginPageTest@4b553d26]" name="tearDown" is-config="true" duration-ms="708" started-at="2021-10-06T21:30:36 IST" finished-at="2021-10-06T21:30:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prac.qa.testcase.HomePageTest@80503]" name="setUp" is-config="true" duration-ms="23773" started-at="2021-10-05T21:17:01 IST" finished-at="2021-10-05T21:17:25 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prac.qa.testcase.LoginPageTest@4b553d26]" name="setUp" is-config="true" duration-ms="6452" started-at="2021-10-06T21:30:37 IST" finished-at="2021-10-06T21:30:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyusername()[pri:2, instance:com.prac.qa.testcase.HomePageTest@80503]" name="verifyusername" duration-ms="20284" started-at="2021-10-05T21:17:25 IST" description="Verify UserName" finished-at="2021-10-05T21:17:45 IST">
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.prac.qa.testcase.LoginPageTest@4b553d26]" name="loginTest" duration-ms="7031" started-at="2021-10-06T21:30:44 IST" description="Login with Username &amp; Password" finished-at="2021-10-06T21:30:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.prac.qa.testcase.LoginPageTest@4b553d26]" name="tearDown" is-config="true" duration-ms="691" started-at="2021-10-06T21:30:51 IST" finished-at="2021-10-06T21:30:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.prac.qa.testcase.LoginPageTest -->
+      <class name="com.prac.qa.testcase.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prac.qa.testcase.HomePageTest@5bcea91b]" name="setUp" is-config="true" duration-ms="18411" started-at="2021-10-06T21:30:51 IST" finished-at="2021-10-06T21:31:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validate_page_title()[pri:1, instance:com.prac.qa.testcase.HomePageTest@5bcea91b]" name="validate_page_title" duration-ms="6" started-at="2021-10-06T21:31:10 IST" description="Validate the Page Title" finished-at="2021-10-06T21:31:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_page_title -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.prac.qa.testcase.HomePageTest@5bcea91b]" name="tearDown" is-config="true" duration-ms="634" started-at="2021-10-06T21:31:10 IST" finished-at="2021-10-06T21:31:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prac.qa.testcase.HomePageTest@5bcea91b]" name="setUp" is-config="true" duration-ms="14904" started-at="2021-10-06T21:31:10 IST" finished-at="2021-10-06T21:31:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyusername()[pri:2, instance:com.prac.qa.testcase.HomePageTest@5bcea91b]" name="verifyusername" duration-ms="20258" started-at="2021-10-06T21:31:25 IST" description="Verify UserName" finished-at="2021-10-06T21:31:46 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/table[1]/tbody/tr[1]/td/table/tbody/tr/td[1]"}
@@ -32,8 +98,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-B4HNNLL', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dc1e17cb2dea67a87475d29dad68bcbc
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: af38011ce846771cacd51fb79cf03f05
 *** Element info: {Using=xpath, value=/html/body/table[1]/tbody/tr[1]/td/table/tbody/tr/td[1]}]]>
             </message>
             <full-stacktrace>
@@ -43,8 +109,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-B4HNNLL', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dc1e17cb2dea67a87475d29dad68bcbc
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: af38011ce846771cacd51fb79cf03f05
 *** Element info: {Using=xpath, value=/html/body/table[1]/tbody/tr[1]/td/table/tbody/tr/td[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -106,15 +172,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyusername -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.prac.qa.testcase.HomePageTest@80503]" name="tearDown" is-config="true" duration-ms="734" started-at="2021-10-05T21:17:45 IST" finished-at="2021-10-05T21:17:46 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.prac.qa.testcase.HomePageTest@5bcea91b]" name="tearDown" is-config="true" duration-ms="656" started-at="2021-10-06T21:31:46 IST" finished-at="2021-10-06T21:31:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prac.qa.testcase.HomePageTest@80503]" name="setUp" is-config="true" duration-ms="19878" started-at="2021-10-05T21:17:46 IST" finished-at="2021-10-05T21:18:06 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.prac.qa.testcase.HomePageTest@5bcea91b]" name="setUp" is-config="true" duration-ms="12613" started-at="2021-10-06T21:31:46 IST" finished-at="2021-10-06T21:31:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="clickoncontactpage()[pri:3, instance:com.prac.qa.testcase.HomePageTest@80503]" name="clickoncontactpage" duration-ms="20207" started-at="2021-10-05T21:18:06 IST" description="Click on Contact Page" finished-at="2021-10-05T21:18:26 IST">
+        <test-method status="FAIL" signature="clickoncontactpage()[pri:3, instance:com.prac.qa.testcase.HomePageTest@5bcea91b]" name="clickoncontactpage" duration-ms="20238" started-at="2021-10-06T21:31:59 IST" description="Click on Contact Page" finished-at="2021-10-06T21:32:19 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Contacts']"}
@@ -123,8 +189,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-B4HNNLL', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63032}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fa3f6a4c56e885ef9854433a9fb3e86c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56024}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a27ae2556d155f8680c520b41313944
 *** Element info: {Using=xpath, value=//a[normalize-space()='Contacts']}]]>
             </message>
             <full-stacktrace>
@@ -134,8 +200,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-B4HNNLL', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63032}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fa3f6a4c56e885ef9854433a9fb3e86c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56024}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a27ae2556d155f8680c520b41313944
 *** Element info: {Using=xpath, value=//a[normalize-space()='Contacts']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -197,11 +263,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickoncontactpage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.prac.qa.testcase.HomePageTest@80503]" name="tearDown" is-config="true" duration-ms="657" started-at="2021-10-05T21:18:26 IST" finished-at="2021-10-05T21:18:26 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.prac.qa.testcase.HomePageTest@5bcea91b]" name="tearDown" is-config="true" duration-ms="672" started-at="2021-10-06T21:32:19 IST" finished-at="2021-10-06T21:32:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.prac.qa.testcase.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
